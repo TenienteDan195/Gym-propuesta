@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Marketing Digital para Gimnasios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 384px;
+            }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF4E50, #FC913A);
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h1, h2, h3 {
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="gradient-bg text-white text-center py-16 px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4">Potenciando tu Gimnasio</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">Una Propuesta de Marketing Digital para Acelerar tu Crecimiento</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <section id="mercado" class="mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">El Mercado Fitness: Una Oportunidad Real</h2>
+                <p class="text-lg text-gray-600">Analizamos el pulso digital en las zonas clave para entender dónde están tus futuros clientes y qué es lo que más les importa. Los datos revelan un mercado con un enorme potencial listo para ser conquistado.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-center">Interés de Búsqueda Mensual</h3>
+                    <p class="text-sm text-gray-500 mb-4 text-center">Volumen comparativo de búsquedas para "gimnasio cerca de mí".</p>
+                    <div class="chart-container h-80">
+                        <canvas id="busquedasChart"></canvas>
+                    </div>
+                     <p class="mt-4 text-center text-gray-700">CDMX lidera la demanda, pero Edo. de México y Querétaro muestran un crecimiento acelerado y una oportunidad única de posicionamiento.</p>
+                </div>
+                <div class="card lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-center">Plataformas Sociales Preferidas</h3>
+                     <p class="text-sm text-gray-500 mb-4 text-center">Distribución del público objetivo (20-45 años) en redes sociales.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="plataformasChart"></canvas>
+                    </div>
+                     <p class="mt-4 text-center text-gray-700">La estrategia debe ser visual y centrada en video. Instagram es clave para el estilo de vida y Facebook para la comunidad y anuncios locales.</p>
+                </div>
+                <div class="card lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-center">Motivación Principal para Inscribirse</h3>
+                     <p class="text-sm text-gray-500 mb-4 text-center">¿Qué es lo que realmente busca un nuevo miembro al unirse?</p>
+                    <div class="chart-container h-80">
+                        <canvas id="motivacionChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-center text-gray-700">El mensaje debe centrarse en la salud y el bienestar integral, usando la estética como resultado y destacando la comunidad como un gran diferenciador.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="estrategia" class="mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestra Estrategia de 3 Fases para el Éxito</h2>
+                <p class="text-lg text-gray-600">Proponemos un plan integral y continuo que acompaña al cliente en todo su viaje, desde que descubre tu gimnasio hasta que se convierte en un embajador leal de tu marca.</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0">
+                <div class="card flex-1 w-full md:w-1/3 text-center">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Fase 1: Atracción</h3>
+                    <p class="text-gray-600">Generamos visibilidad para que las personas correctas te descubran a través de campañas y contenido de alto impacto.</p>
+                </div>
+                <div class="text-4xl text-gray-300 mx-4 font-black hidden md:block">&rarr;</div>
+                 <div class="text-4xl text-gray-300 my-2 font-black rotate-90 md:hidden">&darr;</div>
+                <div class="card flex-1 w-full md:w-1/3 text-center">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Fase 2: Conversión</h3>
+                    <p class="text-gray-600">Despertamos el interés y convertimos a los curiosos en prospectos reales con ofertas claras y comunicación efectiva.</p>
+                </div>
+                 <div class="text-4xl text-gray-300 mx-4 font-black hidden md:block">&rarr;</div>
+                 <div class="text-4xl text-gray-300 my-2 font-black rotate-90 md:hidden">&darr;</div>
+                <div class="card flex-1 w-full md:w-1/3 text-center">
+                    <div class="text-5xl mb-4">❤️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Fase 3: Fidelización</h3>
+                    <p class="text-gray-600">Creamos una comunidad fuerte, haciendo que tus miembros se sientan parte de algo más grande y se queden contigo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenido" class="mb-16">
+             <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Un Ecosistema de Contenido Atractivo</h2>
+                <p class="text-lg text-gray-600">Combinamos el poder del contenido orgánico para construir tu marca con la precisión de las campañas pagadas para acelerar el crecimiento de manera medible.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Contenido Orgánico: El Corazón de tu Marca</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-2xl mr-3">🧠</span><div><strong class="font-semibold">Educativo:</strong> Videos con tips de entrenadores, tutoriales de máquinas y consejos de nutrición.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-3">💪</span><div><strong class="font-semibold">Motivacional:</strong> Testimonios de miembros, videos del ambiente y frases que inspiren a la acción.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-3">🤝</span><div><strong class="font-semibold">Comunidad:</strong> Fotos de clases grupales, "Miembro del Mes" y eventos especiales para fortalecer lazos.</div></li>
+                         <li class="flex items-start"><span class="text-2xl mr-3">📣</span><div><strong class="font-semibold">Promocional:</strong> Anuncios de nuevas clases, ofertas de inscripción y descuentos por referidos.</div></li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Campañas Pagadas: El Acelerador</h3>
+                     <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-2xl mr-3">🚀</span><div><strong class="font-semibold">Campaña "Descubre tu Potencial":</strong> Video dinámico en FB e IG ofreciendo un pase de 3 días gratis para generar prospectos locales.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-3">🎯</span><div><strong class="font-semibold">Campaña de Remarketing:</strong> Anuncios dirigidos a quienes ya interactuaron, con una oferta por tiempo limitado para cerrar la inscripción.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-3">🔍</span><div><strong class="font-semibold">Campaña en Google Search:</strong> Capturamos a los usuarios que ya están buscando activamente un gimnasio en tu zona.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestro Proceso Mensual: Transparencia y Resultados</h2>
+                <p class="text-lg text-gray-600">Trabajamos en un ciclo mensual claro y organizado. Sabrás exactamente qué estamos haciendo en cada etapa para lograr tus objetivos.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-yellow-400">
+                    <div class="text-3xl mb-2">📅</div>
+                    <h3 class="text-lg font-bold">Semana 1: Planificación</h3>
+                    <p class="text-sm text-gray-600">Definimos objetivos y temáticas del mes. Entregamos el calendario de contenidos para tu aprobación.</p>
+                </div>
+                 <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-orange-400">
+                    <div class="text-3xl mb-2">🎬</div>
+                    <h3 class="text-lg font-bold">Semana 2: Creación</h3>
+                    <p class="text-sm text-gray-600">Producimos todo el material visual: sesiones de fotos, videos y diseños gráficos.</p>
+                </div>
+                 <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-red-500">
+                    <div class="text-3xl mb-2">🚀</div>
+                    <h3 class="text-lg font-bold">Semana 3: Lanzamiento</h3>
+                    <p class="text-sm text-gray-600">Publicamos el contenido orgánico y activamos las campañas pagadas, optimizándolas en tiempo real.</p>
+                </div>
+                 <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-500">
+                    <div class="text-3xl mb-2">📊</div>
+                    <h3 class="text-lg font-bold">Semana 4: Reporte</h3>
+                    <p class="text-sm text-gray-600">Entregamos un reporte visual y claro con los resultados, métricas clave y prospectos generados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="paquetes" class="mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Paquetes Diseñados para Crecer Contigo</h2>
+                <p class="text-lg text-gray-600">Ofrecemos soluciones flexibles que se adaptan a tus necesidades. La inversión en publicidad se gestiona por separado para un control total de tu presupuesto.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="card w-full max-w-sm transform hover:scale-105">
+                    <h3 class="text-2xl font-bold text-center">Paquete Impulso</h3>
+                    <p class="text-center text-gray-500 mb-6">El comienzo perfecto</p>
+                    <p class="text-4xl font-black text-center mb-6">$8,500 <span class="text-lg font-semibold">MXN/mes</span></p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">✅<span class="ml-2">Gestión de Facebook e Instagram</span></li>
+                        <li class="flex items-center">✅<span class="ml-2">8 Publicaciones Orgánicas</span></li>
+                        <li class="flex items-center">✅<span class="ml-2">Diseño Gráfico incluido</span></li>
+                        <li class="flex items-center">✅<span class="ml-2">Reporte Mensual Básico</span></li>
+                    </ul>
+                </div>
+                <div class="card w-full max-w-sm transform scale-105 border-4 border-yellow-400 relative">
+                    <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-gray-900 text-sm font-bold px-3 py-1 rounded-full">MÁS POPULAR</span>
+                    <h3 class="text-2xl font-bold text-center">Paquete Crecimiento</h3>
+                    <p class="text-center text-gray-500 mb-6">El equilibrio ideal</p>
+                    <p class="text-4xl font-black text-center mb-6">$16,000 <span class="text-lg font-semibold">MXN/mes</span></p>
+                     <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">✅<span class="ml-2">Gestión de FB, IG y TikTok</span></li>
+                        <li class="flex items-center">✅<span class="ml-2">12 Publicaciones Orgánicas</span></li>
+                        <li class="flex items-center">✅<span class="ml-2"><strong>1 Reel/TikTok a la semana</strong></span></li>
+                        <li class="flex items-center">✅<span class="ml-2"><strong>Gestión de Campañas Pagadas</strong></span></li>
+                        <li class="flex items-center">✅<span class="ml-2">Reporte Detallado</span></li>
+                    </ul>
+                </div>
+                <div class="card w-full max-w-sm transform hover:scale-105">
+                     <h3 class="text-2xl font-bold text-center">Paquete Dominio</h3>
+                    <p class="text-center text-gray-500 mb-6">Para máxima expansión</p>
+                    <p class="text-4xl font-black text-center mb-6">$24,500 <span class="text-lg font-semibold">MXN/mes</span></p>
+                     <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">✅<span class="ml-2">Todas las redes + Google</span></li>
+                        <li class="flex items-center">✅<span class="ml-2">16 Publicaciones Premium</span></li>
+                        <li class="flex items-center">✅<span class="ml-2"><strong>2 Reels/TikToks a la semana</strong></span></li>
+                        <li class="flex items-center">✅<span class="ml-2"><strong>Campañas Ilimitadas</strong></span></li>
+                        <li class="flex items-center">✅<span class="ml-2">Reporte Estratégico</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyecciones" class="mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Proyecciones de Crecimiento</h2>
+                <p class="text-lg text-gray-600">El marketing digital es una maratón, no un sprint. Nuestro enfoque construye resultados sólidos y sostenibles en el tiempo. Aquí una hoja de ruta de lo que puedes esperar.</p>
+            </div>
+            <div class="relative pl-8 border-l-4 border-gray-200">
+                <div class="mb-10">
+                    <div class="absolute w-8 h-8 gradient-bg rounded-full -left-4 mt-1.5 border-4 border-white"></div>
+                    <h3 class="text-2xl font-bold text-orange-500">Primeros 3 Meses</h3>
+                    <ul class="mt-2 ml-4 list-disc text-gray-700">
+                        <li>Incremento del 20-30% en seguidores e interacción.</li>
+                        <li>Flujo constante de 15-25 prospectos calificados al mes.</li>
+                        <li>Posicionamiento inicial de la marca a nivel local.</li>
+                    </ul>
+                </div>
+                <div class="mb-10">
+                    <div class="absolute w-8 h-8 gradient-bg rounded-full -left-4 mt-1.5 border-4 border-white"></div>
+                    <h3 class="text-2xl font-bold text-red-500">A los 6 Meses</h3>
+                     <ul class="mt-2 ml-4 list-disc text-gray-700">
+                        <li>Creación de una comunidad digital activa y participativa.</li>
+                        <li>Campañas optimizadas para un menor costo por prospecto.</li>
+                        <li>Tu gimnasio se convierte en un referente en la zona.</li>
+                    </ul>
+                </div>
+                <div>
+                     <div class="absolute w-8 h-8 gradient-bg rounded-full -left-4 mt-1.5 border-4 border-white"></div>
+                    <h3 class="text-2xl font-bold text-red-700">A los 12 Meses</h3>
+                     <ul class="mt-2 ml-4 list-disc text-gray-700">
+                        <li>Sistema predecible y escalable de adquisición de nuevos miembros.</li>
+                        <li>Base de contenido sólida que atrae clientes de forma orgánica.</li>
+                        <li>Retorno de inversión (ROI) claramente medible y positivo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="gradient-bg text-white text-center py-16 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listos para el Siguiente Nivel?</h2>
+        <p class="text-lg max-w-2xl mx-auto mb-8">Creemos firmemente que esta estrategia puede transformar el futuro de tu gimnasio. Agendemos una llamada de 20 minutos para resolver tus dudas y comenzar a trabajar juntos.</p>
+        <button class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-colors">Agendar Llamada</button>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const commonTooltipCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            const processLabel = (label) => {
+                if (label.length > 16) {
+                    const words = label.split(' ');
+                    let currentLine = '';
+                    const lines = [];
+                    words.forEach(word => {
+                        if ((currentLine + ' ' + word).trim().length > 16) {
+                            lines.push(currentLine.trim());
+                            currentLine = word;
+                        } else {
+                            currentLine = (currentLine + ' ' + word).trim();
+                        }
+                    });
+                    lines.push(currentLine.trim());
+                    return lines;
+                }
+                return label;
+            };
+            
+            const energeticPalette = ['#FF4E50', '#FC913A', '#F9D423', '#2ECC71'];
+
+            var ctxBusquedas = document.getElementById('busquedasChart').getContext('2d');
+            new Chart(ctxBusquedas, {
+                type: 'bar',
+                data: {
+                    labels: ['Ciudad de México', 'Estado de México', 'Querétaro'],
+                    datasets: [{
+                        label: 'Interés Relativo (%)',
+                        data: [100, 75, 50],
+                        backgroundColor: energeticPalette,
+                        borderColor: energeticPalette,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 110,
+                            grid: { display: false },
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    },
+                     plugins: {
+                        legend: { display: false },
+                        ...commonTooltipCallback.plugins
+                    }
+                }
+            });
+
+            var ctxPlataformas = document.getElementById('plataformasChart').getContext('2d');
+            new Chart(ctxPlataformas, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Instagram', 'Facebook', 'TikTok', 'Otros'],
+                    datasets: [{
+                        label: 'Uso de Plataformas',
+                        data: [45, 30, 20, 5],
+                        backgroundColor: energeticPalette,
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                     plugins: {
+                        legend: { position: 'bottom' },
+                        ...commonTooltipCallback.plugins
+                    }
+                }
+            });
+            
+            const motivacionLabels = [
+                'Mejorar Salud / Bienestar',
+                'Estética / Apariencia Física',
+                'Comunidad / Socializar',
+                'Reducir Estrés'
+            ];
+
+            var ctxMotivacion = document.getElementById('motivacionChart').getContext('2d');
+            new Chart(ctxMotivacion, {
+                type: 'bar',
+                data: {
+                    labels: motivacionLabels.map(processLabel),
+                    datasets: [{
+                        label: 'Motivación (%)',
+                        data: [40, 35, 15, 10],
+                        backgroundColor: energeticPalette,
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                         x: {
+                            beginAtZero: true,
+                            grid: { display: false }
+                        },
+                        y: {
+                             grid: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                         ...commonTooltipCallback.plugins
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
